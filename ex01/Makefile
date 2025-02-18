@@ -2,9 +2,11 @@ CC = c++
 
 CC_FLAGS = -Wall -Werror -Wextra -std=c++98
 
-NAME = 
+NAME = Moar_brainz
 
-SOURCES = 
+SOURCES =	main.cpp \
+			Zombie.cpp \
+			zombieHorde.cpp
 
 OBJECTS = $(SOURCES:.cpp=.o)
 
