@@ -2,9 +2,12 @@ CC = c++
 
 CC_FLAGS = -Wall -Werror -Wextra -std=c++98
 
-NAME = 
+NAME = BraiiiiiiinnnzzzZ
 
-SOURCES = 
+SOURCES =	main.cpp \
+			newZombie.cpp \
+			randomChump.cpp \
+			Zombie.cpp
 
 OBJECTS = $(SOURCES:.cpp=.o)
 
