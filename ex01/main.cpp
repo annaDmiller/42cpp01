@@ -22,5 +22,7 @@ int main(void)
 
     std::cout << "Deleting horde of zombies" << std::endl;
     delete[] horde;
+    horde = NULL;
+    
     return (0);
 }

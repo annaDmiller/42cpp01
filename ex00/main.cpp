@@ -15,6 +15,7 @@ int main(void)
     heap_zombie->announce();
     std::cout << "Deleting the allocated memory by delete function" << std::endl;
     delete (heap_zombie);
+    heap_zombie = NULL;
 
     return (0);
 }
