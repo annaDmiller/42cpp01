@@ -2,9 +2,12 @@ CC = c++
 
 CC_FLAGS = -Wall -Werror -Wextra -std=c++98
 
-NAME = 
+NAME = unnecessary_violence
 
-SOURCES = 
+SOURCES =	main.cpp \
+			HumanA.cpp \
+			HumanB.cpp \
+			Weapon.cpp
 
 OBJECTS = $(SOURCES:.cpp=.o)
 
