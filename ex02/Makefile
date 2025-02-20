@@ -2,9 +2,9 @@ CC = c++
 
 CC_FLAGS = -Wall -Werror -Wextra -std=c++98
 
-NAME = 
+NAME = hi_this_is_brain
 
-SOURCES = 
+SOURCES =	main.cpp
 
 OBJECTS = $(SOURCES:.cpp=.o)
 
