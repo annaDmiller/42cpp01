@@ -1,10 +1,12 @@
 CC = c++
 
-CC_FLAGS = -Wall -Werror -Wextra -std=c++98
+CC_FLAGS = -Wall -Werror -Wextra -std=c++98 -g3
 
-NAME = 
+NAME = sed
 
-SOURCES = 
+SOURCES =	main.cpp \
+			check_errors_of_open_file.cpp \
+			run_program.cpp
 
 OBJECTS = $(SOURCES:.cpp=.o)
 
