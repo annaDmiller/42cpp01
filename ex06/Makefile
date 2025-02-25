@@ -2,7 +2,7 @@ CC = c++
 
 CC_FLAGS = -Wall -Werror -Wextra -std=c++98
 
-NAME = 
+NAME = harlFilter
 
 SOURCES = 
 
