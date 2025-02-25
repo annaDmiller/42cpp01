@@ -22,8 +22,5 @@ int main(void)
     harl.complain("debug");
     std::cout << std::endl;
 
-    harl.complain("HELLO");
-    std::cout << std::endl;
-
     return (0);
 }

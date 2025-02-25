@@ -16,6 +16,14 @@ class Harl
     Harl(void);
     ~Harl(void);
 
+    enum Level
+    {
+        DEBUG = 0,
+        INFO,
+        WARNING,
+        ERROR,
+        UNKNOWN
+    };
     void complain(std::string level);
 };
 

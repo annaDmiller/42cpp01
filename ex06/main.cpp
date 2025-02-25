@@ -1,6 +1,6 @@
 #include "Harl.hpp"
 
-int main(int argc, std::string *argv)
+int main(int argc, char **argv)
 {
     if (argc != 2)
     {
@@ -9,6 +9,7 @@ int main(int argc, std::string *argv)
     }
     Harl harl;
 
+    std::string level = argv[1];
     harl.complain(argv[1]);
     return (0);
 }

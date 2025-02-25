@@ -4,7 +4,8 @@ CC_FLAGS = -Wall -Werror -Wextra -std=c++98
 
 NAME = harlFilter
 
-SOURCES = 
+SOURCES =	main.cpp \
+			Harl.cpp
 
 OBJECTS = $(SOURCES:.cpp=.o)
 
