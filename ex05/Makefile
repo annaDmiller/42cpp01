@@ -2,9 +2,10 @@ CC = c++
 
 CC_FLAGS = -Wall -Werror -Wextra -std=c++98
 
-NAME = 
+NAME = harl
 
-SOURCES = 
+SOURCES =	main.cpp \
+			Harl.cpp
 
 OBJECTS = $(SOURCES:.cpp=.o)
 
