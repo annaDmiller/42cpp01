@@ -16,6 +16,7 @@ void Harl::complain(std::string level)
     classFuncs functions[] = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
     std::string lvls[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 
+    std::cout << "[ " << level << " ]" << std::endl;
     for (int ind = 0; ind < 4; ind++)
     {
         if (level == lvls[ind])
@@ -24,31 +25,31 @@ void Harl::complain(std::string level)
             return ;
         }
     }
-    std::cout << level << " level: Harl has nothing to say." << std::endl;
+    std::cout << "Harl has nothing to say." << std::endl;
     return ;
 }
 
 void Harl::error(void)
 {
-    std::cout << "ERROR level: It is impossible to proceed further! You need to stop here!" << std::endl;
+    std::cout << "It is impossible to proceed further! You need to stop here!" << std::endl;
     return ;
 }
 
 void Harl::warning(void)
 {
-    std::cout << "WARNING level: Hey! I warn you: you will cause lots of troubles if you go on." << std::endl;
+    std::cout << "Hey! I warn you: you will cause lots of troubles if you go on." << std::endl;
     return ;
 }
 
 void Harl::info(void)
 {
-    std::cout << "INFO level: You have chosen the info level. If you choose another level, you will have another information printed on the screen.";
+    std::cout << "You have chosen the info level. If you choose another level, you will have another information printed on the screen.";
     std::cout << " The level is defined by string. Based on it, different member functions are called." << std::endl;
     return ;
 }
 
 void Harl::debug(void)
 {
-    std::cout << "DEBUG level: You have passed \"DEBUG\" string to the complain function and the debug function is called." << std::endl;
+    std::cout << "You have passed \"DEBUG\" string to the complain function and the debug function is called." << std::endl;
     return ;
 }
