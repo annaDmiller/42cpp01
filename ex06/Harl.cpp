@@ -24,16 +24,15 @@ Harl::~Harl(void)
 
 void Harl::complain(std::string level)
 {
-    Level lvl_code = UNKNOWN;
+    int lvl_code;
 
-    if (level == "DEBUG")
-        lvl_code = DEBUG;
-    else if (level == "INFO")
-        lvl_code = INFO;
-    else if (level == "WARNING")
-        lvl_code = WARNING;
-    else if (level == "ERROR")
-        lvl_code = ERROR;
+    std::string lvls[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+
+    for (lvl_code = 0; lvl_code < 4; lvl_code++)
+    {
+        if (level == lvls[lvl_code])
+            break ;
+    }
 
     switch(lvl_code) {
         case DEBUG:
