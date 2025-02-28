@@ -23,7 +23,7 @@ void    run_the_program(std::string& filename, std::string& s1, std::string& s2)
     std::ofstream new_file(new_filename.c_str());
     if (!new_file)
     {
-        std::cout << "Error: impossible to create a new file with a required name." << std::endl;
+        std::perror(new_filename.c_str());
         return ;
     }
     std::ifstream file(filename.c_str());

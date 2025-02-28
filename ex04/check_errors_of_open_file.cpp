@@ -18,7 +18,7 @@ int check_open_file(std::string& filename)
 
     if (!file)
     {
-        std::cout << "Error: impossible to open the passed file." << std::endl;
+        std::perror(filename.c_str());
         return (1);
     }
     file.close();
